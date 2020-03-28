@@ -57,10 +57,9 @@
 }
 
 .Animationstart {
-  animation: opacitydone;
+  animation: opacitydone .25s linear forwards;
   animation-delay: 5s;
-  animation-duration: .5s;
-  animation-fill-mode: forwards;
+
 }
 
 @keyframes opacitydone {
