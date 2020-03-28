@@ -84,6 +84,7 @@
   grid-row-gap: 0px;
   line-height: 100%;
   z-index: 5;
+  pointer-events: none;
 }
 
 .box-position {
