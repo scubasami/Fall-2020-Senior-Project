@@ -10,7 +10,7 @@
 }
 
 .stars, .twinkling {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -21,15 +21,20 @@
 }
 
 .stars {
-  background: #000 url("images/stars.png") repeat top center;
-  z-index: 0;
+  background:#000 url('/Users/samistuart/Documents/GitHub/scubasami.github.io/images/stars.png') repeat top center;
+
+  z-index:0;
 }
 
-.twinkling {
-  background: transparent url("images/twinkling.png") repeat top center;
-  z-index: 1;
-  opacity: 1;
-  animation: move-twink-back 200s linear infinite;
+.twinkling{
+  background:transparent url('/Users/samistuart/Documents/GitHub/scubasami.github.io/images/twinkling.png') repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
 }
 
 /*start of rest of stuff*/
