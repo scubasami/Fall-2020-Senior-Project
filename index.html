@@ -14,37 +14,22 @@
 	<script>
 		$(function() {
 			$("#content").load("home.html");
-			$("body").on("click", "nav > div > a", function() {
-					var href = $(this).attr("href");
-					$("#content").load(href);
-					return false;
-				}
-
-			);
-			/*	if ($("nav > div > a").click(function() {
-					var href2 = $(this).attr("href");
-					if (href2.startsWith("#")) {
-						var href = $(this).attr("href");
-						var top = $(href).offset().top;
-						$("html, body").animate(
-							{
-								scrollTop: top
-							}
-						)
-						return true;
-					}
-					else {
-						$("#content").load(href2, function() {
-							console.log(href2);
-						}
-												);
-						return false;
-					}
-				}
-													 )
-														  );
-														  */
 		});
+
+			//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+	/*		$(".close, .popup-overlay").on("click", function() {
+				$(".popup-overlay, .popup-content").removeClass("active");
+			});*/
+
+		function abMe() {
+			$(function(){
+			$(this).on("click", function(){
+				$(".visibility").addClass("active");
+
+			});
+		});
+
+	}
 	</script>
 </head>
 
@@ -55,41 +40,47 @@
 		<div class="twinkling"></div>
 	</div>
 
+	<div class="about-me">
+		<div>bruh moment tab</div>
+	</div>
 	<div class="body">
-<div id="outerbox">
-		<div class ="box-position">
-			<div id="blowingUp">
-				<div class="div1"> <img src="svg/explosion3.svg" class="three"></img> </div>
-				<div class="div2"> <img src="svg/explosion2.svg" class="two"></img></div>
-				<div class="div3"> <img src="svg/explosion.svg" class="one"></img></div>
+		<div id="outerbox">
+			<div class="box-position">
+				<div id="blowingUp">
+					<div class="div1"> <img src="svg/explosion3.svg" class="three"></img> </div>
+					<div class="div2"> <img src="svg/explosion2.svg" class="two"></img></div>
+					<div class="div3"> <img src="svg/explosion.svg" class="one"></img></div>
+				</div>
 			</div>
-		</div>
 
 
-	<div class ="box-position2">	<div id="blowingUp2">
-			<div class="div1"> <img src="svg/explosion2.svg" class="three"></img> </div>
-			<div class="div2"> <img src="svg/explosion.svg" class="two"></img></div>
-			<div class="div3"> <img src="svg/explosion4.svg" class="one"></img></div>
-		</div></div>
-
-
-	<div class ="box-position3">
-		<div id="blowingUp3">
-			<div class="div1"> <img src="svg/explosion.svg" class="three"></img> </div>
-			<div class="div2"> <img src="svg/explosion4.svg" class="two"></img></div>
-			<div class="div3"> <img src="svg/explosion3.svg" class="one"></img></div>
-		</div></div>
-
-		<div class ="box-position4">
-			<div id="blowingUp4">
-				<div class="div1"> <img src="svg/explosion4.svg" class="three"></img> </div>
-				<div class="div2"> <img src="svg/explosion3.svg" class="two"></img></div>
-				<div class="div3"> <img src="svg/explosion2.svg" class="one"></img></div>
+			<div class="box-position2">
+				<div id="blowingUp2">
+					<div class="div1"> <img src="svg/explosion2.svg" class="three"></img> </div>
+					<div class="div2"> <img src="svg/explosion.svg" class="two"></img></div>
+					<div class="div3"> <img src="svg/explosion4.svg" class="one"></img></div>
+				</div>
 			</div>
+
+
+			<div class="box-position3">
+				<div id="blowingUp3">
+					<div class="div1"> <img src="svg/explosion.svg" class="three"></img> </div>
+					<div class="div2"> <img src="svg/explosion4.svg" class="two"></img></div>
+					<div class="div3"> <img src="svg/explosion3.svg" class="one"></img></div>
+				</div>
+			</div>
+
+			<div class="box-position4">
+				<div id="blowingUp4">
+					<div class="div1"> <img src="svg/explosion4.svg" class="three"></img> </div>
+					<div class="div2"> <img src="svg/explosion3.svg" class="two"></img></div>
+					<div class="div3"> <img src="svg/explosion2.svg" class="one"></img></div>
+				</div>
+			</div>
+
+
 		</div>
-
-
-</div>
 		<nav class="header">
 			<div class="left">
 
@@ -98,8 +89,6 @@
 			<div class="middle"> <a href="home.html">Samantha Stuart</a> </div>
 			<div class="right">
 				<a href="resume.html">Resume</a>
-
-
 			</div>
 		</nav>
 

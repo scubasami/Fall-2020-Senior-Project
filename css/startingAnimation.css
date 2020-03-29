@@ -57,7 +57,7 @@
 }
 
 .Animationstart {
-  animation: opacitydone .25s linear forwards;
+  animation: opacitydone .1s linear forwards;
   animation-delay: 5s;
 
 }
@@ -99,11 +99,11 @@
 @keyframes explode {
   0%{
     opacity: 0;
-    z-index: 5;
+
 
   }99%{opacity: 1;}
   100%{opacity: 0;
-  z-index: -4;}
+}
 }
 
 .box-position2 {
