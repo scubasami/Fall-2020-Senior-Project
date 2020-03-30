@@ -11,10 +11,7 @@
 
 .stars, .twinkling {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+
   /*used to be 100% /*/
   width: 100%;
   height: 100%;
@@ -25,21 +22,30 @@
 
 .stars {
   background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-
   z-index:0;
 }
 
 .twinkling{
   background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
   z-index:1;
-
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
   animation:move-twink-back 200s linear infinite;
 }
+.background {
+  z-index: 0;
+  margin: 0;
+  position:static;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
+}
+#bg{
+
+}
 /*start of rest of stuff*/
 .body {
   display: block;
@@ -50,14 +56,11 @@
   color: white;
 }
 
-.background {
-  z-index: 0;
-  margin: 0;
-}
+
 
 html, body {
   margin: 0;
-overflow: hidden;
+/*overflow: hidden;*/
 }
 
 nav {
@@ -148,8 +151,9 @@ nav>div {
 
 }
 .home-grid{
+  position: fixed;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: auto auto auto auto auto;
   grid-template-rows:20% 20% 20% 20% 20%;
   grid-column-gap: 0px;
   z-index: 1;
@@ -165,6 +169,7 @@ nav>div {
   width: 5vh;
   height: 5vh;
   font-size: 3vh;
+  padding: 0;
 background-color: rgba(255,255,255, .5);
 text-align: center;
 color: rgb(0,179,117);
@@ -203,7 +208,7 @@ border-left-color: black;
   text-align: center;
 }
 .rocket2{
-  border: 1px solid rgb(255,255,255);
+
   text-align: center;
   grid-area: 1/1/span 1/ span 1;
 }
@@ -212,13 +217,25 @@ border-left-color: black;
     width: 40%;
 
 }
+.home-grid > div{
+    border: 1px solid rgb(255,255,255);
+}
 .lilguy{
-  border: 1px solid rgb(255,255,255);
-  grid-area: 2/2/ span 1/ span 1;
+grid-area: 2/2/ span 1/ span 1;
+
 }
 .lilguy > img{
   width: 40%;
   height: 40%;
+    animation: rotate1 4s linear infinite;
+}
+@keyframes rotate1 {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(180);}
+
+}
+.trophy{
+  grid-area:5/4/ span 1/span 1;
 }
 /*contact.html*/
 .center {
@@ -232,42 +249,3 @@ border-left-color: black;
 
 /*pulldataadmin.html*/
 /*uses same code as contact.html*/
-/*resume.html */
-.item1 {
-  grid-area: header;
-}
-
-.item2 {
-  grid-area: menu;
-}
-
-.item3 {
-  grid-area: main;
-}
-
-.item4 {
-  grid-area: right;
-}
-
-.item5 {
-  grid-area: footer;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'header header header header header header'
-    'header header header header header header'
-    'menu main main main right right'
-    'menu main main main right right';
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-container>div {
-  background-color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
