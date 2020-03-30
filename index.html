@@ -14,22 +14,28 @@
 	<script>
 		$(function() {
 			$("#content").load("home.html");
-		});
+			$(".popup").addClass("hidden");
+			$(".butt").on("click", function() {
+				var firstout = $(".butt").parent();
+					$(firstout).parent().addClass("hidden");
+
+			});
+
+});
 
 			//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
 	/*		$(".close, .popup-overlay").on("click", function() {
 				$(".popup-overlay, .popup-content").removeClass("active");
 			});*/
 
-		function abMe() {
+
+		function clic() {
 			$(function(){
-			$(this).on("click", function(){
-				$(".visibility").addClass("active");
-
+				$("#pop1").removeClass("hidden");
 			});
-		});
+			}
 
-	}
+
 	</script>
 </head>
 
@@ -40,9 +46,12 @@
 		<div class="twinkling"></div>
 	</div>
 
-	<div class="about-me">
-		<div>bruh moment tab</div>
+	<div class="popup" id="pop1">
+
+		<div><button class="butt">X</button>
+		<p>bruh moment tab</p></div>
 	</div>
+
 	<div class="body">
 		<div id="outerbox">
 			<div class="box-position">
@@ -88,7 +97,7 @@
 			</div>
 			<div class="middle"> <a href="home.html">Samantha Stuart</a> </div>
 			<div class="right">
-				<a href="resume.html">Resume</a>
+	
 			</div>
 		</nav>
 
