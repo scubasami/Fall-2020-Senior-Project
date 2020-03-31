@@ -60,7 +60,7 @@
 
 html, body {
   margin: 0;
-/*overflow: hidden;*/
+overflow: hidden;
 }
 
 nav {
@@ -142,21 +142,15 @@ nav>div {
 
 /*home.html*/
 .rest-of-the-home{
+
   opacity: 0;
+
   animation: fadeIn ease 2s;
   animation-iteration-count: 1;
   animation-delay: 7s;
   animation-fill-mode: forwards;
 
 
-}
-.home-grid{
-  position: fixed;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows:20% 20% 20% 20% 20%;
-  grid-column-gap: 0px;
-  z-index: 1;
 
 }
 
@@ -166,10 +160,10 @@ nav>div {
     visibility: hidden;
 }
 .butt{
-  width: 5vh;
-  height: 5vh;
-  font-size: 3vh;
-  padding: 0;
+width: 5vh;
+height: 5vh;
+font-size: 3vh;
+padding: 0;
 background-color: rgba(255,255,255, .5);
 text-align: center;
 color: rgb(0,179,117);
@@ -207,26 +201,39 @@ border-left-color: black;
 .popup > div >p{
   text-align: center;
 }
+
+.home-grid{
+  height: 90vh;
+  display: grid;
+  grid-template-columns:25vw 25vw  25vw 25vw;
+  /*25vw 25vw  25vw 25vw;/*auto auto auto auto;*/
+  grid-template-rows:22.5h 22.5vh 22.5vh 22.5vh;
+  /*18vh 18vh 18vh 18vh 18vh;*/
+  grid-column-gap: 0px;
+  z-index: 1;
+
+}
+.home-grid > div{
+    border: 1px solid rgb(255,255,255);
+}
 .rocket2{
 
   text-align: center;
   grid-area: 1/1/span 1/ span 1;
 }
 .rocket2 > img{
-      transform: rotate(85deg);
-    width: 40%;
+    height:auto;
+    width: 35vh;
 
 }
-.home-grid > div{
-    border: 1px solid rgb(255,255,255);
-}
+
 .lilguy{
 grid-area: 2/2/ span 1/ span 1;
 
 }
 .lilguy > img{
-  width: 40%;
-  height: 40%;
+  width: 10vh;
+  height: 10vh;
     animation: rotate1 4s linear infinite;
 }
 @keyframes rotate1 {
@@ -235,7 +242,25 @@ grid-area: 2/2/ span 1/ span 1;
 
 }
 .trophy{
-  grid-area:5/4/ span 1/span 1;
+  grid-area:4/3/ span 1/span 1;
+}
+.trophy > img{
+  width: 8vh;
+  height: 8vh;
+}
+.monitor{
+    grid-area:3/4/ span 1/span 1;
+}
+.monitor > img{
+  width: 10vh;
+  height: 10vh;
+}
+.book{
+  grid-area:3/2/ span 1/span 1;
+}
+.book > img{
+  width: 10vh;
+  height: 10vh;
 }
 /*contact.html*/
 .center {
