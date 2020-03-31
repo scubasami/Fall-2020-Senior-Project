@@ -88,11 +88,11 @@ nav {
   }
 }
 
-nav:hover {
+/*nav:hover {
   background-color: rgba(255, 255, 255, .15);
   transition: background-color 1s;
 }
-
+*/
 a {
   text-decoration: none;
   color: white;
@@ -214,7 +214,7 @@ border-left-color: black;
 
 }
 .home-grid > div{
-    border: 1px solid rgb(255,255,255);
+    /*border: 1px solid rgb(255,255,255);*/
 }
 .rocket2{
 
@@ -234,11 +234,28 @@ grid-area: 2/2/ span 1/ span 1;
 .lilguy > img{
   width: 10vh;
   height: 10vh;
-    animation: rotate1 4s linear infinite;
+    animation: rotate1 6s linear infinite;
 }
 @keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate2 {
   0%{transform: rotate(0deg);}
-  100%{transform: rotate(180);}
+  25%{transform: rotate(20deg);}
+  50%{transform: rotate(0deg);}
+  75%{transform: rotate(-20deg); }
+  100%{transform: rotate(0deg);}
 
 }
 .trophy{
@@ -247,6 +264,7 @@ grid-area: 2/2/ span 1/ span 1;
 .trophy > img{
   width: 8vh;
   height: 8vh;
+    animation: rotate2 6s linear infinite;
 }
 .monitor{
     grid-area:3/4/ span 1/span 1;
@@ -254,6 +272,7 @@ grid-area: 2/2/ span 1/ span 1;
 .monitor > img{
   width: 10vh;
   height: 10vh;
+    animation: rotate2 8s linear infinite;
 }
 .book{
   grid-area:3/2/ span 1/span 1;
@@ -261,6 +280,23 @@ grid-area: 2/2/ span 1/ span 1;
 .book > img{
   width: 10vh;
   height: 10vh;
+    animation: rotate2 4s linear infinite;
+}
+.robot{
+  grid-area:2/4/ span 1/span 1;
+}
+.robot > img{
+  width: 10vh;
+  height: 10vh;
+    animation: rotate2 7s linear infinite;
+}
+.beaker{
+  grid-area:4/1/ span 1/span 1;
+}
+.beaker > img{
+  width: 10vh;
+  height: 10vh;
+  animation: rotate2 5s linear infinite;
 }
 /*contact.html*/
 .center {
