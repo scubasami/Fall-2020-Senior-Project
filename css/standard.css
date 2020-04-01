@@ -198,8 +198,8 @@ border-left-color: black;
   width: 90vh;
   border: 5px solid rgb(0,179,117);
     background-color: white;
-    border-top-left-radius: 15%;
-    border-bottom-left-radius:15%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius:5%;
     font-family: 'Inconsolata', monospace;
 }
 .popup > div > div{
