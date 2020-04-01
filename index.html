@@ -5,101 +5,199 @@
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
 
-	<title>Personal Website</title>
+	<title>Samantha Stuart</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 	<link rel="stylesheet" href="css/standard.css">
 	<link rel="stylesheet" href="css/startingAnimation.css">
-	<link rel="shortcut icon" type="image/png" href="images/cowboy.png" />
+	<link rel="shortcut icon" type="image/svg" href="svg/robot-svgrepo-com.svg" />
 	<script>
 		$(function() {
 			$("#content").load("home.html");
 			$(".popup").addClass("hidden");
 			$(".butt").on("click", function() {
 				var firstout = $(".butt").parent();
-					$(firstout).parent().addClass("hidden");
+				$(firstout).parent().addClass("hidden");
 
 			});
 
-});
+		});
 
-			//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
-	/*		$(".close, .popup-overlay").on("click", function() {
-				$(".popup-overlay, .popup-content").removeClass("active");
-			});*/
+		//removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+		/*		$(".close, .popup-overlay").on("click", function() {
+					$(".popup-overlay, .popup-content").removeClass("active");
+				});*/
 
 
 		function clic() {
-			$(function(){
+			$(function() {
 				$("#pop1").removeClass("hidden");
 			});
-			}
-			function clic2() {
-				$(function(){
-					$("#pop2").removeClass("hidden");
-				});
-				}
-			function clic3() {
-					$(function(){
-						$("#pop3").removeClass("hidden");
-					});
-					}
-			function clic4() {
-							$(function(){
-								$("#pop4").removeClass("hidden");
-							});
-							}
-			function clic5() {
-				$(function(){
-					$("#pop5").removeClass("hidden");
-						});
-						}
-			function clic6() {
-				$(function(){
+		}
+
+		function clic2() {
+			$(function() {
+				$("#pop2").removeClass("hidden");
+			});
+		}
+
+		function clic3() {
+			$(function() {
+				$("#pop3").removeClass("hidden");
+			});
+		}
+
+		function clic4() {
+			$(function() {
+				$("#pop4").removeClass("hidden");
+			});
+		}
+
+		function clic5() {
+			$(function() {
+				$("#pop5").removeClass("hidden");
+			});
+		}
+
+		function clic6() {
+			$(function() {
 				$("#pop6").removeClass("hidden");
-					});
-					}
+			});
+		}
 	</script>
 </head>
 
 <body>
-<div id="bg">
-	<div class="background">
-		<div class="stars"></div>
-		<div class="twinkling"></div>
+	<div id="bg">
+		<div class="background">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
+		</div>
 	</div>
-</div>
 	<div class="popup" id="pop1">
 
-		<div><button class="butt">X</button>
-		<p>bruh moment tab</p></div>
+		<div>
+			<button class="butt">X</button>
+			<div>
+				<h2>About Me</h2>
+				<ul>
+					<li>Born and raised in Omaha, Nebraska</li>
+					<li>I like to code in my freetime</li>
+					<li>Marvel movie fanatic</li>
+
+				</ul>
+			</div>
+
+		</div>
 	</div>
 	<div class="popup" id="pop2">
 
 		<div><button class="butt">X</button>
-		<p>trophy</p></div>
+			<div>
+				<h2>Awards</h2>
+				<ul>
+					<li>I have been on the honor roll since freshman year of highschool</li>
+					<li>Last year, and this year I won the NCWIT Aspirations in Computing award <img></img> </li>
+					<li> I have lettered in swimming and academics</li>
+					<li></li>
+				</ul>
+			</div>
+
+		</div>
 	</div>
 	<div class="popup" id="pop3">
 
 		<div><button class="butt">X</button>
-		<p>work ex</p></div>
+			<div>
+				<h2>Work Experience</h2>
+				<p>Over the summer, I recently had an internship at Creighton in the resarch and development lab.</p>
+
+				<ul>
+					A few of my responsibilities and achievements included:
+					<li>Helped build an AR app that the nurising students used to prepare themselves for real life scenarios</li>
+					<li>Expanded my knowledge of C# and using Unity</li>
+					<li>Captioned a 360 degree video using Adobe Premier</li>
+
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="popup" id="pop4">
 
 		<div><button class="butt">X</button>
-		<p>Education</p></div>
+			<div><h2>Education</h2>
+
+				<ul>I currently attend Omaha North High School, here are some of the college courses I have taken:
+					<li>AP Pyhsics 1 &2</li>
+					<li>Cybersecurity</li>
+					<li>AP Psychology</li>
+					<li>AP Calculus 1&2</li>
+					<li>AP Computer Science A</li>
+					<li>AP English</li>
+
+				</ul>
+				<ul>
+					In summer 2018, I attended Highlander Code Camp, where I learned:
+					<li>CSS</li>
+					<li>HTML</li>
+					<li>Javascript</li>
+					<li>Jquery</li>
+		</ul>
+				<ul>
+					In winter 2018 through summer 2018, with Mystery Code Society, I learned:
+
+					<li>How to make basic websites in the Htm<elle/> Masters course </li>
+					<li>The basics of Unity in the Games for YOUnity course</li>
+
+					<li>How to make my own game using Unity in the Games for YOUnity Lvl. 2 course</li>
+
+
+
+				</ul>
+			</div>
+
+		</div>
 	</div>
 
 	<div class="popup" id="pop5">
 
 		<div><button class="butt">X</button>
-		<p>Volunteer</p></div>
+			<div><h2>Volunteer</h2>
+				<ul>
+					<li>At Elk Ridge Village Retirement Community I assist residents during happy hour, call numbers during bingo, and help set up holiday decor</li>
+					<li>Helped Saint Andrew's church set up holiday decorating</li>
+					<li>I participated in fundraising efforts for anti-genocide with AGEIS</li>
+				</ul>
+
+
+			</div>
+		</div>
 	</div>
 
 	<div class="popup" id="pop6">
 
 		<div><button class="butt">X</button>
-		<p>Activities</p></div>
+			<div><h2>Activities</h2>
+				<ul>
+					I try to stay as involved as I can in my school with various activites including:
+					<li>Chemistry Field Day, where I practiced various chemistry activities with other students</li>
+					<li>UNO IT Innovation Cup, where I worked with a group to solve the issues of the Omaha Public Transportation </li>
+					<li>Student Ambassadors, which included preparing for school activivites, and giving incoming students tours of the school building</li>
+					<li>Swimming</li>
+					<li>Volleyball</li>
+					<li>Aegis, where I worked with other students to raise awareness of genocide, and volunteered at various fundraisors</li>
+
+					<li>Teams, where I worked with a group to solve engineering related problems</li>
+
+
+
+				</ul>
+			</div>
+
+
+		</div>
 	</div>
 	<div class="body">
 		<div id="outerbox">

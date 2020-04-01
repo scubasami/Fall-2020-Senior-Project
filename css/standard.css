@@ -61,6 +61,7 @@
 html, body {
   margin: 0;
 overflow: hidden;
+
 }
 
 nav {
@@ -128,6 +129,7 @@ nav>div {
   animation: fadeIn ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  font-family: 'Inconsolata', monospace;
 }
 
 @keyframes fadeIn {
@@ -196,10 +198,25 @@ border-left-color: black;
   width: 90vh;
   border: 5px solid rgb(0,179,117);
     background-color: white;
-    border-radius: 15%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius:15%;
+    font-family: 'Inconsolata', monospace;
 }
-.popup > div >p{
+.popup > div > div{
   text-align: center;
+  font-size: 5vh;
+  overflow-y: auto;
+  height: 85vh;
+  padding-left: 1.5vh;
+  min-height: 40px;
+line-height: 40px;
+}
+ul{
+  text-align: left;
+
+}
+li{
+  padding: 12px;
 }
 
 .home-grid{
